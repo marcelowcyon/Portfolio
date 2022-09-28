@@ -1,0 +1,7 @@
+.footer_descricao{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 12px;
+    margin: 1em;
+}

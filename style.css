@@ -1,0 +1,38 @@
+@import url(./styles/header.css);
+@import url(./styles/main.css);
+@import url(./styles/footer.css);
+
+:root{
+
+    --fonte-principal: "Poppins";
+    --cor-de-fundo: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(181,181,181,1) 50%, rgba(164,164,164,1) 100%);
+    --cor-de-fonte: #f5f9ff;
+
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-de-fonte);
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--cor-de-fonte);
+  }
+
+::-webkit-scrollbar{
+    background: transparent;
+    border-radius: 5px;
+    width: 0px;
+  }
+
+  
+.container_geral, .projetos{
+    display: flex;
+    min-height: 100vh;
+}
