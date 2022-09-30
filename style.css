@@ -6,7 +6,7 @@
 
     --fonte-principal: "Poppins";
     --cor-de-fundo: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(181,181,181,1) 50%, rgba(164,164,164,1) 100%);
-    --cor-de-fonte: #f5f9ff;
+    --cor-de-fonte: #8f39e6;
 
   }
 
@@ -35,4 +35,30 @@
 .container_geral, .projetos{
     display: flex;
     min-height: 100vh;
+}
+
+.section_inicio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.container_sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.section_projetos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.img_inicio, .container_inicio_titulo, .container_titulo2, .container_titulo_descricao2, .botoes, .titulo_projetos, #li1, #li2, #li3{
+  visibility: hidden;
 }
