@@ -14,27 +14,42 @@
 </head>
 <body>
   <header class="header">
-    <img id="menu_burguer" class="menu_svg" src="./img/menu.svg" onclick="clickMenu()">
-    <ul class="menu" id="itens">
-      <a href="#inicio"><li class="menu_item">Inicio</li></a>
-      <a href="#sobremim"><li class="menu_item">Sobre mim</li></a>
-      <a href="#projetos"><li class="menu_item">Projetos</li></a>
-    </ul>
+
+    <div class="menu_mob">
+      <img id="menu_burguer" class="menu_svg" src="./img/menu.svg" onclick="clickMenu()">
+      <ul class="menu" id="itens">
+        <a href="#inicio"><li class="menu_item">Inicio</li></a>
+        <a href="#sobremim"><li class="menu_item">Sobre mim</li></a>
+        <a href="#projetos"><li class="menu_item">Projetos</li></a>
+      </ul>
+    </div>
+
+      <nav class="menu_desk">
+        <div class="img_menu">
+          <img class="cyon" src="./img/cyon.png">
+        </div>
+        <ul class="lista_desk">
+          <a href="#inicio"><li class="item_desk">Inicio</li></a>
+          <a href="#sobremim"><li class="item_desk">Sobre mim</li></a>
+          <a href="#projetos"><li class="item_desk">Projetos</li></a>
+        </ul>
+      </nav>
+ 
   </header>
   
   <main>
-    <section id="inicio" class="section_inicio">
+    <section  id="inicio" class="section_inicio">
 
       <div>
         <div class="container_inicio">
-          <img src="./img/avatar.png" class="img_inicio">
+          <img src="./img/eu1.png" class="img_inicio">
         </div>
 
         <div class="container_inicio_titulo">
           <h2 class="container_titulo">Olá, eu sou</h2>
           <p class="container_titulo_descricao">
           <span class="span_nome">Marcelo Cyon.</span></p>
-          <p class="container_descricao">Seja bem-vindo ao meu Portifólio, aqui vou estar sempre atualizando meus conhecimentos!</p>
+          <p class="container_descricao">Seja bem-vindo ao meu Portifólio, aqui vou estar sempre atualizando meus conhecimentos e projetos!</p>
           <div class="botao_div"><button class="botao_link"><a href="https://www.linkedin.com/in/marcelowcyon/"><p class="bt_texto">Acesse meu Linkedin</p></a></button></div>
         </div> 
       </div>
@@ -47,12 +62,13 @@
           <p class="container_titulo_descricao2">Sou estudante de Sistemas de informação na Universidade Anhembi Morumbi. Atualmente faço meus cursos de programação na plataforma da Alura,
             onde aprofundo meus conhecimentos em programação, agora focado em ser um desenvolvedor Front-End.<br>Ja trabalhei com suporte técnico de TI, onde realizava remotamente instalações
             de softwares nos computadores dos clientes e realizava abertura de tickets na plataforma da empresa. Também ja trabalhei em uma loja de hardware onde auxiliava nas montagens de computadores
-            e no estoque. Hoje em dia estou trabalhando como Analista de Logística em uma empresa de importação, porém procurando minha primeira experiencia profissional na area de desenvolvedor Front-End.
+            e no estoque. Hoje em dia estou trabalhando como Analista de Logística em uma empresa de importação, porém procurando minha primeira experiencia profissional na area de desenvolvedor Front-End.<br>
+            Entrando em meu perfil da Alura é possivel acompanhar meu aprendizado e ver quais linguagens de programação eu tenho dominio e quais estou aprendendo.
           </p>
         </div>
         <div class="botoes">
-          <a href="https://cursos.alura.com.br/user/marcelowcyon"><img class="btn_img" src="./img/in.png"></a>
-          <a href="https://cursos.alura.com.br/user/marcelowcyon"><img class="btn_img" src="./img/alura.png"></a>
+          <a href="https://cursos.alura.com.br/user/marcelowcyon" class="btn"><img class="btn_img" src="./img/in.png"><p class="btn_desc">Perfil do Linkedin</p></a>
+          <a href="https://cursos.alura.com.br/user/marcelowcyon" class="btn"><img class="btn_img" src="./img/alura.png"><p>Perfil da Alura</p></a>
         </div>
       </div>
     </section>

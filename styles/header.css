@@ -5,23 +5,77 @@ header{
   width: 100%;
   background-color: rgba(112, 112, 112,0.5);
   backdrop-filter: blur(5px);
-
-  display: block;
-  text-align: center;
-
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
+.menu_mob{
+  display: block;
+  justify-self: center;
+  text-align: center;
+  align-items: center;
+}
 ul.menu{
   display: none;
 }
 
-li{
+.menu_item{
   padding: 0.5em;
   margin: 0.5em 0em;
 }
 
-li:hover{
-  background-color: rgba(112, 112, 112,0.3);
+.menu_item:hover{
+  background-color: rgba(228, 222, 222, 0.3);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .menu_item{
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .menu_mob{
+      display: none;
+  }
+  .menu_desk{
+    display: flex;
+    justify-content: space-between;
+    padding: 0em;
+  }
+
+  .cyon{
+    width: 100px;
+    margin-left: 5em;
+    flex-grow: 1;
+  }
+  .menu_desk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lista_desk{
+    display: flex;
+    
+    margin-right: 5em;
+  }
+
+  .item_desk{
+    margin-left: 5em;
+    padding: 1em 3em 1em 3em;
+  }
+
+  .item_desk:hover{
+    background-color: rgba(255, 255, 255, 0.65);
+    transition: 0.6s;
+  }
+  
+}
+
+@media screen and (max-width: 767px){
+  .menu_desk{
+    display: none;
+  }
 }
