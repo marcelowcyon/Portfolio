@@ -8,6 +8,11 @@ header{
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
+.menu_svg{
+  width: 10%;
+  padding-top: 0.5em;
+}
+
 .menu_mob{
   display: block;
   justify-self: center;
@@ -32,6 +37,11 @@ ul.menu{
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .menu_item{
     font-size: 18px;
+  }
+
+  .menu_svg{
+    width: 5%;
+    padding-top: 0.5em;
   }
 }
 
